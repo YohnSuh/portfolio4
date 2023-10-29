@@ -65,10 +65,10 @@
     text-align: center;
     transform: translateY(-50%) translate3d(0, 0, 0);
     color: white;
-    letter-spacing: .4em;
+    letter-spacing: 5px;
     font-size: 24px;
     text-shadow: 0 1px 0 rgba(black, .1);
-    text-indent: .3em;
+    font-family: 'GowunBatang-Regular';
 }
 .mainPage .title p {
     font-size: 12px;
@@ -102,19 +102,31 @@
 
 /* subPage */
 .subPage .subWrap {
-    width: 90%;
+    position: relative;
+    /* width: 90%; */
     margin: 0 auto;
     text-align: center;
 }
 .subPage .subWrap h1 {}
 .subPage .subWrap input {display: none;}
-.subPage .cardBox {}
+/* 카드 뒷배경 누르면 닫히게 */
+.subPage .subWrap .closeBg {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.subPage .cardBox {
+    width: 90%;
+    margin: 0 auto;
+}
 /* 카테고리 카드, 짝 카드 */
 .subPage .categoryCard,
 .subPage .coupleCard {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
 }
@@ -131,6 +143,8 @@
     border: 1px solid;
     border-radius: 5%;
     transition: .3s;
+    background-color: white;
+    margin: 5px;
 }
 .subPage .categoryCard label div,
 .subPage .coupleCard label div {
@@ -143,7 +157,7 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 15px);
     height: calc(100% - 15px);
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 5%;
 }
 .subPage .categoryCard label h2,
@@ -152,21 +166,75 @@
 .subPage .coupleCard label div {
     backface-visibility: hidden;
 }
-.subPage .coupleCard label .front {background-color: red;z-index: 9;}
-.subPage .coupleCard label .back {background: green;}
+.subPage .coupleCard label .front {
+    background: linear-gradient(to bottom, #a3d4ed, #D8B4F8, #FFC7EA, #FBF0B2);
+    z-index: 9;
+}
+/* 주제 카드 색 */
+.subPage .categoryCard label[for="introduce"] div,
+.subPage .coupleCard label[for="c-intro"] .back {background-color: #a3d4ed;}
+.subPage .categoryCard label[for="about"] div,
+.subPage .coupleCard label[for="c-about"] .back {background-color: #D8B4F8;}
+.subPage .categoryCard label[for="skill"] div,
+.subPage .coupleCard label[for="c-skill"] .back {background-color: #FFC7EA;}
+.subPage .categoryCard label[for="portfolio"] div,
+.subPage .coupleCard label[for="c-port"] .back {background-color: #FBF0B2;}
 .subPage .coupleCard label .back h2 {transform: rotateY(180deg);}
 /* 카테고리 카드 클릭 */
 #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
 #about:checked ~ .cardBox .categoryCard label[for="about"],
 #skill:checked ~ .cardBox .categoryCard label[for="skill"],
-#portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {background-color: aliceblue;}
+#portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-15px);}
+/* 카테고리 카드 클릭 후 힌트 */
+#introduce:checked ~ .cardBox .coupleCard label[for="c-intro"],
+#about:checked ~ .cardBox .coupleCard label[for="c-about"],
+#skill:checked ~ .cardBox .coupleCard label[for="c-skill"],
+#portfolio:checked ~ .cardBox .coupleCard label[for="c-port"] {animation: hint alternate linear infinite .2s;}
 /* 짝 카드 클릭 */
 #c-intro:checked ~ .cardBox .coupleCard label[for="c-intro"],
 #c-about:checked ~ .cardBox .coupleCard label[for="c-about"],
 #c-skill:checked ~ .cardBox .coupleCard label[for="c-skill"],
-#c-port:checked ~ .cardBox .coupleCard label[for="c-port"] {transform: rotateY(180deg);}
+#c-port:checked ~ .cardBox .coupleCard label[for="c-port"] {transform: rotateY(180deg);animation: none;}
 #c-intro:checked ~ .cardBox .coupleCard label[for="c-intro"] .front,
 #c-about:checked ~ .cardBox .coupleCard label[for="c-about"] .front,
 #c-skill:checked ~ .cardBox .coupleCard label[for="c-skill"] .front,
 #c-port:checked ~ .cardBox .coupleCard label[for="c-port"] .front {z-index: 0;}
+/* 주제 내용 */
+.subPage .subContent {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.subPage .contentBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.subPage .contWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40%;
+    background-color: white;
+}
+/* 카드 짝 성공 */
+#introduce:checked ~ #c-intro:checked ~ .subContent.introBox,
+#about:checked ~ #c-about:checked ~ .subContent.aboutBox,
+#skill:checked ~ #c-skill:checked ~ .subContent.skillBox,
+#portfolio:checked ~ #c-port:checked ~ .subContent.portfolioBox {display: block;}
+/* 내용 닫기 */
+#c-close:checked ~ .subContent {display: none;}
+/* Animation hint */
+@keyframes hint {
+    0% {transform: scale(.98);}
+}
 
