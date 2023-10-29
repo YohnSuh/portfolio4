@@ -1,0 +1,7 @@
+@media all and (min-width: 1024px) {
+    .mainPage .main-icon {
+        width: 350px;
+        height: 350px;
+    }
+    .subPage .categoryCard label h2 {font-size: 3.6rem;}
+}
