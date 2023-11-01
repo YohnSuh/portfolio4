@@ -33,7 +33,7 @@
     top: 0;
     width: 100%;
     padding-bottom: 100%;
-    background: linear-gradient(to top, rgba(238, 135, 169, 1), rgba(221, 238, 255, 0) 60%, rgba(255, 255, 255, .5));
+    background: linear-gradient(to top, rgba(216, 180, 248, 1), rgba(221, 238, 255, 0) 60%, rgba(255, 255, 255, .5));
     z-index: 11;
     transform: translate3d(0, 0, 0);
 }
@@ -46,15 +46,15 @@
     border-radius: 43%;
     animation: wave 3000ms infinite linear;
     transform-origin: 50% 48%;
-    background: #0af;
-    opacity: .4;
+    background: #a3d4ed;
+    opacity: .8;
 }
 .mainPage .wave::after {
     content: '';
     display: block;
     padding-bottom: 100%;
 }
-.mainPage .wave2 {animation: wave 7000ms infinite linear; opacity: .15; background-color: yellow;}
+.mainPage .wave2 {animation: wave 7000ms infinite linear; opacity: .5; background-color: #FBF0B2;}
 .mainPage .wave3 {animation: wave 5000ms infinite linear;}
 .mainPage .title {
     position: absolute;
@@ -122,9 +122,9 @@
     margin-top: 100px;
     margin-bottom: 50px;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 700;
 }
-.subPage .subWrap h1 span {font-weight: 500;}
+.subPage .subWrap h1 span {font-weight: 900;}
 .subPage .subWrap input {display: none;}
 /* 카드 뒷배경 누르면 닫히게 */
 .subPage .subWrap .closeBg {
@@ -133,6 +133,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+    box-shadow: none;
+    border-radius: 0;
 }
 .subPage .cardBox {
     width: 90%;
@@ -157,7 +159,7 @@
 .subPage .coupleCard label {
     position: relative;
     width: 22.5%;
-    border: 1px solid;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .2), 0 2px 5px rgba(0, 0, 0, .1);
     border-radius: 5%;
     transition: .3s;
     background-color: white;
@@ -172,14 +174,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 15px);
-    height: calc(100% - 15px);
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
     border-radius: 5%;
 }
 .subPage .categoryCard label h2,
 .subPage .coupleCard label h2 {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 900;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    color: var(--text-white);
 }
 /* 짝카드 앞, 뒤 */
 .subPage .coupleCard label div {
@@ -251,24 +255,30 @@
 }
 .subPage .contWrap > h2 {
     font-size: 2.4rem;
+    font-family: var(--font-high);
     font-weight: 900;
     margin-bottom: 10px;
     text-align: left;
-    color: var(--text-gray);
+    background: linear-gradient(to right, #a3d4ed, #D8B4F8, #FFC7EA, #FBF0B2);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 .subPage .contWrap > p {
     font-size: 1.4rem;
     text-align: left;
     margin-bottom: 20px;
-    line-height: 24px;
+    font-weight: 700;
 }
-.subPage .intro-text {
+.subPage .contWrap > p > span {font-weight: 900;}
+.subPage .contWrap > ul {
     text-align: left;
     font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--text-gray);
 }
-.subPage .intro-text span {
+.subPage .contWrap > ul span {
     display: block;
-    width: 55px;
+    width: 60px;
     line-height: 20px;
     text-align: center;
     background-color: #D8B4F8;
@@ -278,15 +288,34 @@
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 3px 5px;
+    color: var(--text-gray);
 }
-.subPage .intro-text li:first-child span {margin-top: 0;}
+.subPage .contWrap > ul li:first-child span {margin-top: 0;}
+/* 기술스택 부분 */
+.subPage .contWrap .skill-box {text-align: left;}
+.subPage .contWrap .skill-box span {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    padding: 4px 12px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border: 1.5px solid var(--text-high);
+    border-radius: 100px;
+    cursor: default;
+    transition: .2s;
+}
+.subPage .contWrap .skill-box span:hover {
+    font-weight: 900;
+    background-color: #D8B4F8;
+}
 .subPage .contentClose {
     position: absolute;
     top: 15px;
     right: 15px;
     font-size: 1.6rem;
     cursor: pointer;
-    color: var(--text-gray);
+    color: var(--text-high);
 }
 /* 카드 짝 성공 */
 #introduce:checked ~ #c-intro:checked ~ .subContent.introBox,

@@ -27,17 +27,32 @@
         width: 168px;
         height: 224px;
     }
+    /* 카드 안 쪽 패딩 */
+    .subPage .categoryCard label div,
+    .subPage .coupleCard label div {
+        width: calc(100% - 18px);
+        height: calc(100% - 18px);
+    }
     /* 카드 모바일 비율 없애기 */
     .subPage .categoryCard::after,
     .subPage .coupleCard::after {display: none;}
     /* 카드 내용 글자 크기 */
     .subPage .categoryCard label h2,
     .subPage .coupleCard label h2 {font-size: 1.6rem;}
-
-    /* 서브페이지 introduce */
+    /* 카테고리 카드 클릭 */
+    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
+    #about:checked ~ .cardBox .categoryCard label[for="about"],
+    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
+    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-25px);}
+    /* 서브페이지 */
     .subPage .contWrap > h2 {font-size: 3rem;}
-    .subPage .intro-text span {
+    .subPage .contWrap > p {font-size: 1.6rem;}
+    .subPage .contWrap > ul span {
         display: inline-block;
         margin-right: 10px;
+    }
+    .subPage .contWrap .skill-box span {
+        font-size: 1.4rem;
+        padding: 5px 16px;
     }
 }

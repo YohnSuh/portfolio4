@@ -21,6 +21,10 @@
     /* 카드 내용 글자 크기 */
     .subPage .categoryCard label h2,
     .subPage .coupleCard label h2 {font-size: 2.4rem;}
+    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
+    #about:checked ~ .cardBox .categoryCard label[for="about"],
+    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
+    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-35px);}
     /* 서브페이지 클릭 후 나오는 박스 */
     .subPage .contWrap {padding: 60px 40px;}
     .subPage .contWrap > h2 {margin-bottom: 20px;}
@@ -30,10 +34,14 @@
         font-size: 1.8rem;
         margin-bottom: 30px;
     }
-    .subPage .intro-text {font-size: 1.6rem;}
-    .subPage .intro-text span {
+    .subPage .contWrap > ul {font-size: 1.6rem;}
+    .subPage .contWrap > ul span {
         font-size: 1.4rem;
-        width: 65px;
+        width: 68px;
+    }
+    .subPage .contWrap .skill-box span {
+        font-size: 1.6rem;
+        padding: 6px 20px;
     }
     /* 서브페이지 닫힘 버튼 */
     .subPage .contentClose {font-size: 2.4rem;}
