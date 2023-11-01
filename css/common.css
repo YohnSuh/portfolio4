@@ -27,5 +27,6 @@
 }
 :root {
     --text-white : white;
+    --text-gray : #494848;
 }
 html {font-size: 62.5%;font-family: Pretendard;}

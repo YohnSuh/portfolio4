@@ -243,6 +243,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    min-width: 300px;
     padding: 40px 20px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -253,11 +254,13 @@
     font-weight: 900;
     margin-bottom: 10px;
     text-align: left;
+    color: var(--text-gray);
 }
 .subPage .contWrap > p {
     font-size: 1.4rem;
     text-align: left;
     margin-bottom: 20px;
+    line-height: 24px;
 }
 .subPage .intro-text {
     text-align: left;
@@ -274,7 +277,7 @@
     font-size: 1.2rem;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 0 5px;
+    padding: 3px 5px;
 }
 .subPage .intro-text li:first-child span {margin-top: 0;}
 .subPage .contentClose {
@@ -283,6 +286,7 @@
     right: 15px;
     font-size: 1.6rem;
     cursor: pointer;
+    color: var(--text-gray);
 }
 /* 카드 짝 성공 */
 #introduce:checked ~ #c-intro:checked ~ .subContent.introBox,
