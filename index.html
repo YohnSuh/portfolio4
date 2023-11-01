@@ -9,6 +9,8 @@
     <link href="css/mobile.css" rel="stylesheet">
     <link href="css/tablet.css" rel="stylesheet">
     <link href="css/pc.css" rel="stylesheet">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--main page-->
@@ -34,15 +36,13 @@
     <!--subPage-->
     <div class="subPage">
         <div class="subWrap">
-            <h1>보고자 하는 주제(카드)를 누른 후, 해당 주제의 짝카드를 찾아 눌러보세요!</h1>
+            <h1>보고자 하는 주제(카드)를 누른 후,<br>해당 주제의 <span>짝카드를 찾아</span> 눌러보세요!</h1>
             <input type="radio" name="category" id="introduce" checked>
             <input type="radio" name="category" id="about">
             <input type="radio" name="category" id="skill">
-            <input type="radio" name="category" id="portfolio">
             <input type="radio" name="couple" id="c-intro">
             <input type="radio" name="couple" id="c-about">
             <input type="radio" name="couple" id="c-skill">
-            <input type="radio" name="couple" id="c-port">
             <input type="radio" name="couple" id="c-close">
             <!-- 카드 뒷배경 누르면 닫히게-->
             <label for="c-close" class="closeBg"></label>
@@ -58,26 +58,19 @@
                     <label for="skill">
                         <div><h2>SKILL</h2></div>
                     </label>
-                    <!-- <label for="portfolio">
-                        <div><h2>PORTFOLIO</h2></div>
-                    </label> -->
                 </div><!--categoryCard-->
                 <!--짝 카드-->
                 <div class="coupleCard">
-                    <!-- <label for="c-port">
-                        <div class="front"><h2>Click Me!</h2></div>
-                        <div class="back"><h2>PORTFOLIO</h2></div>
-                    </label> -->
                     <label for="c-skill">
-                        <div class="front"><h2>Click Me!</h2></div>
+                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
                         <div class="back"><h2>SKILL</h2></div>
                     </label>
                     <label for="c-intro">
-                        <div class="front"><h2>Click Me!</h2></div>
+                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
                         <div class="back"><h2>INTRODUCE</h2></div>
                     </label>
                     <label for="c-about">
-                        <div class="front"><h2>Click Me!</h2></div>
+                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
                         <div class="back"><h2>ABOUT</h2></div>
                     </label>
                 </div><!--coupleCard-->
@@ -85,23 +78,28 @@
             <!--intro내용-->
             <div class="subContent introBox">
                 <label for="c-close" class="contentBg"></label>
-                <div class="contWrap"></div><!--contWrap-->
+                <div class="contWrap">
+                    <h2>INTRODUCE</h2>
+                    <P>안녕하세요, 신입 퍼블리셔 조연서입니다. 소통하고 협업하며 함께의 가치를 아는 웹퍼블리셔가 되고자 합니다.<br>저의 포트폴리오 사이트에 방문해주셔서 감사합니다!</P>
+                    <ul class="intro-text">
+                        <li><span><i class="fa-solid fa-face-smile"></i> Name</span>조연서</li>
+                        <li><span><i class="fa-solid fa-cake-candles"></i> Birth</span>1995.02.25</li>
+                        <li><span><i class="fa-brands fa-github"></i> Github</span><a href="https://github.com/YohnSuh">https://github.com/YohnSuh</a></li>
+                        <li><span><i class="fa-solid fa-at"></i> E-mail</span>yohnsuh@gmail.com</li>
+                    </ul><!--text-->
+                    <label for="c-close" class="contentClose"><i class="fa-solid fa-circle-xmark"></i></label>
+                </div><!--contWrap-->
             </div><!--subContent introBox-->
             <!--about내용-->
             <div class="subContent aboutBox">
                 <label for="c-close" class="contentBg"></label>
                 <div class="contWrap"></div><!--contWrap-->
-            </div><!--subContent introBox-->
+            </div><!--subContent aboutBox-->
             <!--skill내용-->
             <div class="subContent skillBox">
                 <label for="c-close" class="contentBg"></label>
                 <div class="contWrap"></div><!--contWrap-->
-            </div><!--subContent introBox-->
-            <!--portfolio내용-->
-            <div class="subContent portfolioBox">
-                <label for="c-close" class="contentBg"></label>
-                <div class="contWrap"></div><!--contWrap-->
-            </div><!--subContent introBox-->
+            </div><!--subContent skillBox-->
         </div><!--subWrap-->
     </div><!--subPage-->
 </body>

@@ -64,7 +64,7 @@
     z-index: 1;
     text-align: center;
     transform: translateY(-50%) translate3d(0, 0, 0);
-    color: white;
+    color: var(--text-white);
     letter-spacing: 5px;
     font-size: 24px;
     text-shadow: 0 1px 0 rgba(black, .1);
@@ -78,24 +78,35 @@
 @keyframes wave {
     100% { transform: rotate(360deg); }
 }
+/* 메인페이지 소개 문구 */
+.mainPage .main-text {
+    margin-top: 50px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
 /* 마우스 스크롤 */
-.mainPage .main-scroll {}
+.mainPage .main-scroll {margin-top: 50px;}
 .mainPage .main-scroll > div {
-    width: 25px;
-    height: 36px;
-    border: 3px solid white;
+    width: 15px;
+    height: 24px;
+    border: 2px solid white;
     border-radius: 50px;
     margin: 0 auto;
 }
 .mainPage .main-scroll span {
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     border-radius: 100%;
     background-color: white;
     animation: scroll 1.5s infinite linear;
 }
-/* Animation */
+.mainPage .main-scroll p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--text-white);
+}
+/* Animation */ 
 @keyframes scroll {
     100% {transform: translateY(10px);}
 }
@@ -107,7 +118,13 @@
     margin: 0 auto;
     text-align: center;
 }
-.subPage .subWrap h1 {}
+.subPage .subWrap h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.subPage .subWrap h1 span {font-weight: 500;}
 .subPage .subWrap input {display: none;}
 /* 카드 뒷배경 누르면 닫히게 */
 .subPage .subWrap .closeBg {
@@ -134,7 +151,7 @@
 .subPage .coupleCard::after {
     content: '';
     display: block;
-    padding-bottom: 30%;
+    padding-bottom: 32%;
 }
 .subPage .categoryCard label,
 .subPage .coupleCard label {
@@ -157,11 +174,13 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 15px);
     height: calc(100% - 15px);
-    /* border: 1px solid; */
     border-radius: 5%;
 }
 .subPage .categoryCard label h2,
-.subPage .coupleCard label h2 {font-size: 1rem;}
+.subPage .coupleCard label h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
 /* 짝카드 앞, 뒤 */
 .subPage .coupleCard label div {
     backface-visibility: hidden;
@@ -216,15 +235,54 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
 }
 .subPage .contWrap {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 40%;
     background-color: white;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.subPage .contWrap > h2 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.subPage .contWrap > p {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.subPage .intro-text {
+    text-align: left;
+    font-size: 1.4rem;
+}
+.subPage .intro-text span {
+    display: block;
+    width: 55px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #D8B4F8;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+.subPage .intro-text li:first-child span {margin-top: 0;}
+.subPage .contentClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 /* 카드 짝 성공 */
 #introduce:checked ~ #c-intro:checked ~ .subContent.introBox,
@@ -235,6 +293,8 @@
 #c-close:checked ~ .subContent {display: none;}
 /* Animation hint */
 @keyframes hint {
-    0% {transform: scale(.98);}
+    0% {transform: rotate(-1.5deg);}
+    100% {transform: rotate(1.5deg);}
 }
+
 

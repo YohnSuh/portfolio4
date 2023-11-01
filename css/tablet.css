@@ -1,4 +1,5 @@
 @media all and (min-width: 768px) {
+    /* 메인페이지 물결 아이콘 */
     .mainPage .main-icon {
         width: 250px;
         height: 250px;
@@ -6,5 +7,37 @@
     .mainPage .main-icon::after {
         height: 100%;
         padding-bottom: 0;
+    }
+    /* 메인페이지 마우스 */
+    .mainPage .main-scroll > div {
+        width: 20px;
+        height: 30px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .mainPage .main-scroll span {
+        width: 5px;
+        height: 5px;
+    }
+    /* 서브페이지 게임 설명 글자 크기 */
+    .subPage .subWrap h1 {font-size: 2rem;}
+    /* 카드 크기 */
+    .subPage .categoryCard label,
+    .subPage .coupleCard label {
+        width: 168px;
+        height: 224px;
+    }
+    /* 카드 모바일 비율 없애기 */
+    .subPage .categoryCard::after,
+    .subPage .coupleCard::after {display: none;}
+    /* 카드 내용 글자 크기 */
+    .subPage .categoryCard label h2,
+    .subPage .coupleCard label h2 {font-size: 1.6rem;}
+
+    /* 서브페이지 introduce */
+    .subPage .contWrap > h2 {font-size: 3rem;}
+    .subPage .intro-text span {
+        display: inline-block;
+        margin-right: 10px;
     }
 }
