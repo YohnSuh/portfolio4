@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이 력 서</title>
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/mobile.css" rel="stylesheet">
@@ -11,6 +13,11 @@
     <link href="css/pc.css" rel="stylesheet">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" defer></script>
 </head>
 <body>
     <!--main page-->
@@ -36,8 +43,8 @@
     <!--subPage-->
     <div class="subPage">
         <div class="subWrap">
-            <h1>보고자 하는 주제(카드)를 누른 후,<br>해당 주제의 <span>짝카드를 찾아</span> 눌러보세요!</h1>
-            <input type="radio" name="category" id="introduce" checked>
+            <h1>보고자 하는 <span>주제가 적힌 카드를</span> 누른 후,<br>해당 카드와 <span>색이 같은 카드를</span> 찾아 눌러보세요!</h1>
+            <input type="radio" name="category" id="introduce">
             <input type="radio" name="category" id="about">
             <input type="radio" name="category" id="skill">
             <input type="radio" name="couple" id="c-intro">
@@ -64,15 +71,15 @@
                     <!-- 카드 뒷배경 누르면 닫히게-->
                     <label for="c-close" class="closeBg"></label>
                     <label for="c-skill">
-                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
+                        <div class="front"><h2>Click Me!</h2></div>
                         <div class="back"><h2>SKILL</h2></div>
                     </label>
                     <label for="c-intro">
-                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
+                        <div class="front"><h2>Click Me!</h2></div>
                         <div class="back"><h2>INTRODUCE</h2></div>
                     </label>
                     <label for="c-about">
-                        <div class="front"><h2><p>짝카드</p>Click Me!</h2></div>
+                        <div class="front"><h2>Click Me!</h2></div>
                         <div class="back"><h2>ABOUT ME</h2></div>
                     </label>
                 </div><!--coupleCard-->
@@ -127,5 +134,75 @@
             </div><!--subContent skillBox-->
         </div><!--subWrap-->
     </div><!--subPage-->
+    <div class="myWork">
+        <div class="workWrap">
+            <h2>PORTFOLIO</h2>
+            <div class="swiper work-txt">
+                <div class="swiper-wrapper work-txt-wrap">
+                    <!--포트폴리오 설명 (배스킨라빈스)-->
+                    <div class="swiper-slide work-txt-slide">
+                        <div class="work-title">
+                            <p>반응형 웹사이트</p>
+                            <h2>배스킨라빈스 홈페이지 리뉴얼</h2>
+                        </div><!--work-title-->
+                        <div class="work-cont">
+                            <p>
+                            아이스크림 브랜드라는 특성에 맞춰 톡톡 튀는 컨셉으로 디자인 하였고, 기존 웹사이트는 정보 전달에 부족함이 있어
+                            전달하고자 하는 정보가 사용자에게 쉽게 인식되도록 구역을 나누어 리뉴얼 했습니다.
+                            </p>
+                            <a href="https://yohnsuh.github.io/portfolio3" target="_blank">사이트 바로가기</a>
+                        </div><!--work-cont-->
+                    </div><!--swiper-slide work-txt-slide-->
+                    <!--포트폴리오 설명 (뱅앤올룹슨)-->
+                    <div class="swiper-slide work-txt-slide">
+                        <div class="work-title">
+                            <p>반응형 웹사이트</p>
+                            <h2>뱅앤올룹슨 홈페이지 리뉴얼</h2>
+                        </div><!--work-title-->
+                        <div class="work-cont">
+                            <p>
+                            메인 페이지에서 상품에 대한 정보가 드러날 수 있게 내용을 정리하였고, 브랜드에 대한 소개와 상품에 대한 직관적 전달이 되도록
+                            브랜드가 추구하는 디자인 컨셉에 맞춰 단순하고 깔끔하게 리뉴얼 했습니다.
+                            </p>
+                            <a href="https://yohnsuh.github.io/portfolio_bo/" target="_blank">사이트 바로가기</a>
+                        </div><!--work-cont-->
+                    </div><!--swiper-slide work-txt-slide-->
+                    <!--포트폴리오 설명 (드림씨어터)-->
+                    <div class="swiper-slide work-txt-slide">
+                        <div class="work-title">
+                            <p>반응형 웹사이트</p>
+                            <h2>드림씨어터 홈페이지 리뉴얼</h2>
+                        </div><!--work-title-->
+                        <div class="work-cont">
+                            <p>
+                            기존의 웹사이트는 다양한 정보가 구조적으로 정리되지 않고, 공연에 대한 정보가 적어 메인페이지에서 정보를 찾아보기가 어려웠습니다. 
+                            이러한 문제점을 고치기 위해 공연장 홈페이지에 맞게 공연에 대한 정보를 한 눈에 볼 수 있도록 리뉴얼 하였습니다.
+                            </p>
+                            <a href="https://yohnsuh.github.io/portfolio1" target="_blank">사이트 바로가기</a>
+                        </div><!--work-cont-->
+                    </div><!--swiper-slide work-txt-slide-->
+                </div><!--swiper-wrapper work-txt-wrap-->
+            </div><!--swiper work-txt-->
+            <div class="swiper work-img">
+                <div class="swiper-wrapper work-img-wrap">
+                    <!--포트폴리오 이미지 (배스킨라빈스)-->
+                    <div class="swiper-slide work-img-slide">
+                        <div class="work-image"><img src="images/portfolio_img1.png"></div>
+                        <div class="work-title"><h2>배스킨라빈스 홈페이지 리뉴얼</h2></div>
+                    </div><!--swiper-slide work-img-slide-->
+                    <!--포트폴리오 이미지 (뱅앤올룹슨)-->
+                    <div class="swiper-slide work-img-slide">
+                        <div class="work-image"><img src="images/portfolio_img2.png"></div>
+                        <div class="work-title"><h2>뱅앤올룹슨 홈페이지 리뉴얼</h2></div>
+                    </div><!--swiper-slide work-img-slide-->
+                    <!--포트폴리오 이미지 (드림씨어터)-->
+                    <div class="swiper-slide work-img-slide">
+                        <div class="work-image"><img src="images/portfolio_img3.png"></div>
+                        <div class="work-title"><h2>드림씨어터 홈페이지 리뉴얼</h2></div>
+                    </div><!--swiper-slide work-img-slide-->
+                </div><!--swiper-wrapper work-img-wrap-->
+            </div><!--swiper work-img-->
+        </div><!--workWrap-->
+    </div><!--myWork-->
 </body>
 </html>
