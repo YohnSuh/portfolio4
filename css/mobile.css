@@ -357,7 +357,7 @@
     display: inline-block;
     font-size: 1.2rem;
     padding: 8px 24px;
-    background-color: #d7d7d7;
+    background-color: rgba(0, 0, 0, .1);
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -366,6 +366,10 @@
 
 /* CONTACT */
 .contact {margin-top: 150px;}
+.contact .contactWrap {
+    text-align: center;
+    margin: 0 auto;
+}
 .contact h1 {
     text-align: center;
     font-size: 2.4rem;
@@ -373,3 +377,25 @@
     font-weight: 900;
     margin-bottom: 45px;
 }
+.contact .con-box h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: Pretendard;
+    margin-bottom: 10px;
+}
+.contact .con-box p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+/* footer */
+footer {
+    margin-top: 170px;
+    background-color: rgba(0, 0, 0, .1);
+}
+footer .fWrap {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer .fWrap p:last-child {font-weight: 900;}

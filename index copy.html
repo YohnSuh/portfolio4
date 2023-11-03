@@ -6,6 +6,8 @@
     <title>이 력 서</title>
     <!--swiper css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/mobile.css" rel="stylesheet">
@@ -17,7 +19,9 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js" defer></script>
+    <!--slick-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js" defer></script>
 </head>
 <body>
     <!--main page-->
@@ -108,7 +112,7 @@
                     <ul class="about-text">
                         <li><span><i class="fa-solid fa-graduation-cap"></i> 학력</span>경성대학교 외식 서비스 경영학 졸업</li>
                         <li><span><i class="fa-solid fa-pen-to-square"></i> 교육과정</span>아이티윌 부산 교육기관 프로젝트 기반 핀테크 서비스 자바 개발자</li>
-                        <li><span><i class="fa-solid fa-building"></i> 경력사항</span>(주) 씨넷 부설 연구소 근무</li>
+                        <li><span><i class="fa-solid fa-pen-to-square"></i> 경력사항</span>(주) 씨넷 부설 연구소 근무</li>
                     </ul><!--intro-text-->
                     <label for="c-close" class="contentClose"><i class="fa-solid fa-circle-xmark"></i></label>
                 </div><!--contWrap-->
@@ -134,14 +138,17 @@
             </div><!--subContent skillBox-->
         </div><!--subWrap-->
     </div><!--subPage-->
+
+    <!--==================================-->
+    <!--slick test-->
     <div class="myWork">
         <div class="workWrap">
             <h1>PORTFOLIO</h1>
             <div class="workSlides">
-                <div class="swiper work-txt">
-                    <div class="swiper-wrapper work-txt-wrap">
+                <div class="work-txt">
+                    <!-- <div class="work-txt-wrap"> -->
                         <!--포트폴리오 설명 (배스킨라빈스)-->
-                        <div class="swiper-slide work-txt-slide">
+                        <div class="work-txt-slide">
                             <div class="work-title">
                                 <p>반응형 웹사이트</p>
                                 <h2>배스킨라빈스 홈페이지 리뉴얼</h2>
@@ -153,9 +160,9 @@
                                 </p>
                                 <a href="https://yohnsuh.github.io/portfolio3" target="_blank">사이트 바로가기</a>
                             </div><!--work-cont-->
-                        </div><!--swiper-slide work-txt-slide-->
+                        </div><!--work-txt-slide-->
                         <!--포트폴리오 설명 (뱅앤올룹슨)-->
-                        <div class="swiper-slide work-txt-slide">
+                        <div class="work-txt-slide">
                             <div class="work-title">
                                 <p>반응형 웹사이트</p>
                                 <h2>뱅앤올룹슨 홈페이지 리뉴얼</h2>
@@ -167,9 +174,9 @@
                                 </p>
                                 <a href="https://yohnsuh.github.io/portfolio_bo/" target="_blank">사이트 바로가기</a>
                             </div><!--work-cont-->
-                        </div><!--swiper-slide work-txt-slide-->
+                        </div><!--work-txt-slide-->
                         <!--포트폴리오 설명 (드림씨어터)-->
-                        <div class="swiper-slide work-txt-slide">
+                        <div class="work-txt-slide">
                             <div class="work-title">
                                 <p>반응형 웹사이트</p>
                                 <h2>드림씨어터 홈페이지 리뉴얼</h2>
@@ -181,57 +188,39 @@
                                 </p>
                                 <a href="https://yohnsuh.github.io/portfolio1" target="_blank">사이트 바로가기</a>
                             </div><!--work-cont-->
-                        </div><!--swiper-slide work-txt-slide-->
-                    </div><!--swiper-wrapper work-txt-wrap-->
-                </div><!--swiper work-txt-->
-                <div class="swiper work-img">
-                    <div class="swiper-wrapper work-img-wrap">
+                        </div><!--work-txt-slide-->
+                    <!-- </div> -->
+                    <!--work-txt-wrap-->
+                </div><!--work-txt-->
+                <div class="work-img">
+                    <!-- <div class="work-img-wrap"> -->
                         <!--포트폴리오 이미지 (배스킨라빈스)-->
-                        <div class="swiper-slide work-img-slide">
+                        <div class="work-img-slide">
                             <div class="work-image"><img src="images/portfolio_img1.png"></div>
                             <div class="work-img-tit"><h3>배스킨라빈스 홈페이지 리뉴얼</h3></div>
-                        </div><!--swiper-slide work-img-slide-->
+                        </div><!--work-img-slide-->
                         <!--포트폴리오 이미지 (뱅앤올룹슨)-->
-                        <div class="swiper-slide work-img-slide">
+                        <div class="work-img-slide">
                             <div class="work-image"><img src="images/portfolio_img2.png"></div>
                             <div class="work-img-tit"><h3>뱅앤올룹슨 홈페이지 리뉴얼</h3></div>
-                        </div><!--swiper-slide work-img-slide-->
+                        </div><!--work-img-slide-->
                         <!--포트폴리오 이미지 (드림씨어터)-->
-                        <div class="swiper-slide work-img-slide">
+                        <div class="work-img-slide">
                             <div class="work-image"><img src="images/portfolio_img3.png"></div>
                             <div class="work-img-tit"><h3>드림씨어터 홈페이지 리뉴얼</h3></div>
-                        </div><!--swiper-slide work-img-slide-->
-                    </div><!--swiper-wrapper work-img-wrap-->
-                </div><!--swiper work-img-->
+                        </div><!--work-img-slide-->
+                    <!-- </div> -->
+                    <!--work-img-wrap-->
+                </div><!--work-img-->
             </div><!--workSlides-->
         </div><!--workWrap-->
     </div><!--myWork-->
-
+    <!--slick test-->
+    <!--====================================-->
     <div class="contact">
         <div class="contactWrap">
             <h1>CONTACT ME</h1>
-            <div class="con-box">
-                <div class="cont-item">
-                    <h2><i class="fa-solid fa-phone"></i> Cell Phone</h2>
-                    <p>010-9949-6359</p>
-                </div><!--con-item-->
-                <div class="cont-item">
-                    <h2><i class="fa-solid fa-at"></i> E-mail</h2>
-                    <p>yohnsuh@gmail.com</p>
-                </div><!--con-item-->
-                <div class="cont-item">
-                    <h2><i class="fa-brands fa-github"></i> Github</h2>
-                    <p>https://github.com/YohnSuh</p>
-                </div><!--con-item-->
-            </div><!--con-box-->
         </div><!--contactWrap-->
     </div><!--contact-->
-
-    <footer>
-        <div class="fWrap">
-            <p>본 사이트는 상업적 목적이 아닌 포트폴리오용으로 제작되었습니다.</p>
-            <p>Copyright © 2023 All Rights Reserved</p>
-        </div>
-    </footer>
 </body>
 </html>

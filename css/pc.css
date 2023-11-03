@@ -46,8 +46,39 @@
     /* 서브페이지 닫힘 버튼 */
     .subPage .contentClose {font-size: 2.4rem;}
 
-    /* slick slide portfolio */
-    .myWork .slick-slide {width: 100px;}
-    .myWork .work-img-slide {width: 100px;}
-    .myWork .work-img img {width: 100%;}
+    /* 포트폴리오 영역 */
+    .myWork {margin-top: 250px;}
+    .myWork .workWrap {width: 70%;}
+    .myWork h1 {
+        font-size: 4.8rem;
+        margin-bottom: 80px;
+    }
+    .myWork .work-txt {
+        width: 70%;
+        padding-right: 50px;
+        margin-right: 50px;
+        box-sizing: border-box;
+        border-right: 1px solid;
+    }
+    .myWork .work-title p {font-size: 1.8rem;}
+    .myWork .work-title h2 {font-size: 3.2rem;font-weight: 900;}
+    .myWork .work-cont p {font-size: 2.4rem;}
+    .myWork .work-cont a {font-size: 1.8rem;padding: 10px 36px;}
+    .myWork .work-img {width: 80%;}
+    .myWork .work-img-tit h3 {font-size: 1.8rem;}
+
+    /* CONTACT 영역 */
+    .contact {margin-top: 250px;}
+    .contact .contactWrap {width: 70%;}
+    .contact h1 {
+        font-size: 4.8rem;
+        margin-bottom: 80px;
+    }
+
+    /* footer */
+    footer {margin-top: 270px;}
+    footer .fWrap {
+        padding: 20px 0;
+        font-size: 1.6rem;
+    }
 }
