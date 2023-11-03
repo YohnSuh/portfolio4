@@ -55,4 +55,30 @@
         font-size: 1.4rem;
         padding: 5px 16px;
     }
+    /* 포트폴리오 영역 */
+    .myWork .workWrap .workSlides {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .myWork .work-txt {
+        width: 444px;
+        padding-right: 30px;
+        margin-right: 30px;
+        box-sizing: border-box;
+        border-right: 1px solid;
+    }
+    .myWork .work-title p {font-size: 1.4rem;}
+    .myWork .work-title h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .myWork .work-cont p {font-size: 1.6rem;}
+    .myWork .work-cont a {font-size: 1.4rem;}
+    .myWork .work-img {width: 444px;}
+    .myWork .work-img-tit {display: block;}
+    .myWork .work-img-tit h3 {
+        font-size: 1.6rem;
+        font-weight: 900;   
+    }
 }

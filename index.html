@@ -43,7 +43,7 @@
     <!--subPage-->
     <div class="subPage">
         <div class="subWrap">
-            <h1>보고자 하는 <span>주제가 적힌 카드를</span> 누른 후,<br>해당 카드와 <span>색이 같은 카드를</span> 찾아 눌러보세요!</h1>
+            <h1>보고자 하는 <span>내용이 적힌 카드를</span> 누른 후,<br>해당 카드와 <span>색이 같은 카드를</span> 찾아 눌러보세요!</h1>
             <input type="radio" name="category" id="introduce">
             <input type="radio" name="category" id="about">
             <input type="radio" name="category" id="skill">
@@ -137,73 +137,76 @@
     <div class="myWork">
         <div class="workWrap">
             <h1>PORTFOLIO</h1>
-            <div class="swiper work-txt">
-                <div class="swiper-wrapper work-txt-wrap">
-                    <!--포트폴리오 설명 (배스킨라빈스)-->
-                    <div class="swiper-slide work-txt-slide">
-                        <div class="work-title">
-                            <p>반응형 웹사이트</p>
-                            <h2>배스킨라빈스 홈페이지 리뉴얼</h2>
-                        </div><!--work-title-->
-                        <div class="work-cont">
-                            <p>
-                            아이스크림 브랜드라는 특성에 맞춰 톡톡 튀는 컨셉으로 디자인 하였고, 기존 웹사이트는 정보 전달에 부족함이 있어
-                            전달하고자 하는 정보가 사용자에게 쉽게 인식되도록 구역을 나누어 리뉴얼 했습니다.
-                            </p>
-                            <a href="https://yohnsuh.github.io/portfolio3" target="_blank">사이트 바로가기</a>
-                        </div><!--work-cont-->
-                    </div><!--swiper-slide work-txt-slide-->
-                    <!--포트폴리오 설명 (뱅앤올룹슨)-->
-                    <div class="swiper-slide work-txt-slide">
-                        <div class="work-title">
-                            <p>반응형 웹사이트</p>
-                            <h2>뱅앤올룹슨 홈페이지 리뉴얼</h2>
-                        </div><!--work-title-->
-                        <div class="work-cont">
-                            <p>
-                            메인 페이지에서 상품에 대한 정보가 드러날 수 있게 내용을 정리하였고, 브랜드에 대한 소개와 상품에 대한 직관적 전달이 되도록
-                            브랜드가 추구하는 디자인 컨셉에 맞춰 단순하고 깔끔하게 리뉴얼 했습니다.
-                            </p>
-                            <a href="https://yohnsuh.github.io/portfolio_bo/" target="_blank">사이트 바로가기</a>
-                        </div><!--work-cont-->
-                    </div><!--swiper-slide work-txt-slide-->
-                    <!--포트폴리오 설명 (드림씨어터)-->
-                    <div class="swiper-slide work-txt-slide">
-                        <div class="work-title">
-                            <p>반응형 웹사이트</p>
-                            <h2>드림씨어터 홈페이지 리뉴얼</h2>
-                        </div><!--work-title-->
-                        <div class="work-cont">
-                            <p>
-                            기존의 웹사이트는 다양한 정보가 구조적으로 정리되지 않고, 공연에 대한 정보가 적어 메인페이지에서 정보를 찾아보기가 어려웠습니다. 
-                            이러한 문제점을 고치기 위해 공연장 홈페이지에 맞게 공연에 대한 정보를 한 눈에 볼 수 있도록 리뉴얼 하였습니다.
-                            </p>
-                            <a href="https://yohnsuh.github.io/portfolio1" target="_blank">사이트 바로가기</a>
-                        </div><!--work-cont-->
-                    </div><!--swiper-slide work-txt-slide-->
-                </div><!--swiper-wrapper work-txt-wrap-->
-            </div><!--swiper work-txt-->
-            <div class="swiper work-img">
-                <div class="swiper-wrapper work-img-wrap">
-                    <!--포트폴리오 이미지 (배스킨라빈스)-->
-                    <div class="swiper-slide work-img-slide">
-                        <div class="work-image"><img src="images/portfolio_img1.png"></div>
-                        <div class="work-img-tit"><h3>배스킨라빈스 홈페이지 리뉴얼</h3></div>
-                    </div><!--swiper-slide work-img-slide-->
-                    <!--포트폴리오 이미지 (뱅앤올룹슨)-->
-                    <div class="swiper-slide work-img-slide">
-                        <div class="work-image"><img src="images/portfolio_img2.png"></div>
-                        <div class="work-img-tit"><h3>뱅앤올룹슨 홈페이지 리뉴얼</h3></div>
-                    </div><!--swiper-slide work-img-slide-->
-                    <!--포트폴리오 이미지 (드림씨어터)-->
-                    <div class="swiper-slide work-img-slide">
-                        <div class="work-image"><img src="images/portfolio_img3.png"></div>
-                        <div class="work-img-tit"><h3>드림씨어터 홈페이지 리뉴얼</h3></div>
-                    </div><!--swiper-slide work-img-slide-->
-                </div><!--swiper-wrapper work-img-wrap-->
-            </div><!--swiper work-img-->
+            <div class="workSlides">
+                <div class="swiper work-txt">
+                    <div class="swiper-wrapper work-txt-wrap">
+                        <!--포트폴리오 설명 (배스킨라빈스)-->
+                        <div class="swiper-slide work-txt-slide">
+                            <div class="work-title">
+                                <p>반응형 웹사이트</p>
+                                <h2>배스킨라빈스 홈페이지 리뉴얼</h2>
+                            </div><!--work-title-->
+                            <div class="work-cont">
+                                <p>
+                                아이스크림 브랜드라는 특성에 맞춰 톡톡 튀는 컨셉으로 디자인 하였고, 기존 웹사이트는 정보 전달에 부족함이 있어
+                                전달하고자 하는 정보가 사용자에게 쉽게 인식되도록 구역을 나누어 리뉴얼 했습니다.
+                                </p>
+                                <a href="https://yohnsuh.github.io/portfolio3" target="_blank">사이트 바로가기</a>
+                            </div><!--work-cont-->
+                        </div><!--swiper-slide work-txt-slide-->
+                        <!--포트폴리오 설명 (뱅앤올룹슨)-->
+                        <div class="swiper-slide work-txt-slide">
+                            <div class="work-title">
+                                <p>반응형 웹사이트</p>
+                                <h2>뱅앤올룹슨 홈페이지 리뉴얼</h2>
+                            </div><!--work-title-->
+                            <div class="work-cont">
+                                <p>
+                                메인 페이지에서 상품에 대한 정보가 드러날 수 있게 내용을 정리하였고, 브랜드에 대한 소개와 상품에 대한 직관적 전달이 되도록
+                                브랜드가 추구하는 디자인 컨셉에 맞춰 단순하고 깔끔하게 리뉴얼 했습니다.
+                                </p>
+                                <a href="https://yohnsuh.github.io/portfolio_bo/" target="_blank">사이트 바로가기</a>
+                            </div><!--work-cont-->
+                        </div><!--swiper-slide work-txt-slide-->
+                        <!--포트폴리오 설명 (드림씨어터)-->
+                        <div class="swiper-slide work-txt-slide">
+                            <div class="work-title">
+                                <p>반응형 웹사이트</p>
+                                <h2>드림씨어터 홈페이지 리뉴얼</h2>
+                            </div><!--work-title-->
+                            <div class="work-cont">
+                                <p>
+                                기존의 웹사이트는 다양한 정보가 구조적으로 정리되지 않고, 공연에 대한 정보가 적어 메인페이지에서 정보를 찾아보기가 어려웠습니다. 
+                                이러한 문제점을 고치기 위해 공연장 홈페이지에 맞게 공연에 대한 정보를 한 눈에 볼 수 있도록 리뉴얼 하였습니다.
+                                </p>
+                                <a href="https://yohnsuh.github.io/portfolio1" target="_blank">사이트 바로가기</a>
+                            </div><!--work-cont-->
+                        </div><!--swiper-slide work-txt-slide-->
+                    </div><!--swiper-wrapper work-txt-wrap-->
+                </div><!--swiper work-txt-->
+                <div class="swiper work-img">
+                    <div class="swiper-wrapper work-img-wrap">
+                        <!--포트폴리오 이미지 (배스킨라빈스)-->
+                        <div class="swiper-slide work-img-slide">
+                            <div class="work-image"><img src="images/portfolio_img1.png"></div>
+                            <div class="work-img-tit"><h3>배스킨라빈스 홈페이지 리뉴얼</h3></div>
+                        </div><!--swiper-slide work-img-slide-->
+                        <!--포트폴리오 이미지 (뱅앤올룹슨)-->
+                        <div class="swiper-slide work-img-slide">
+                            <div class="work-image"><img src="images/portfolio_img2.png"></div>
+                            <div class="work-img-tit"><h3>뱅앤올룹슨 홈페이지 리뉴얼</h3></div>
+                        </div><!--swiper-slide work-img-slide-->
+                        <!--포트폴리오 이미지 (드림씨어터)-->
+                        <div class="swiper-slide work-img-slide">
+                            <div class="work-image"><img src="images/portfolio_img3.png"></div>
+                            <div class="work-img-tit"><h3>드림씨어터 홈페이지 리뉴얼</h3></div>
+                        </div><!--swiper-slide work-img-slide-->
+                    </div><!--swiper-wrapper work-img-wrap-->
+                </div><!--swiper work-img-->
+            </div><!--workSlides-->
         </div><!--workWrap-->
     </div><!--myWork-->
+
     <div class="contact">
         <div class="contactWrap">
             <h1>CONTACT ME</h1>

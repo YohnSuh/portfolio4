@@ -361,12 +361,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.myWork .work-image {
-    width: 100%;
-}
-.myWork .work-image img {
-    width: 100%;
-}
+.myWork .work-image img {width: 100%;}
 .myWork .work-img-tit {display: none;}
 
 /* CONTACT */

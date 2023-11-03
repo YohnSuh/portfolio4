@@ -45,4 +45,9 @@
     }
     /* 서브페이지 닫힘 버튼 */
     .subPage .contentClose {font-size: 2.4rem;}
+
+    /* slick slide portfolio */
+    .myWork .slick-slide {width: 100px;}
+    .myWork .work-img-slide {width: 100px;}
+    .myWork .work-img img {width: 100%;}
 }
