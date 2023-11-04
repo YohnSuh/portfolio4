@@ -357,10 +357,13 @@
     display: inline-block;
     font-size: 1.2rem;
     padding: 8px 24px;
-    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid #D8B4F8;
+    border-radius: 100px;
     margin-top: 20px;
     margin-bottom: 30px;
+    transition: .3s;
 }
+.myWork .work-cont a:hover {background-color: #D8B4F8;}
 .myWork .work-image img {width: 100%;}
 .myWork .work-img-tit {display: none;}
 
