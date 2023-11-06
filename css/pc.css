@@ -61,12 +61,24 @@
         border-right: 1px solid;
     }
     .myWork .work-title p {font-size: 1.8rem;}
-    .myWork .work-title h2 {font-size: 3.2rem;font-weight: 900;}
-    .myWork .work-cont p {font-size: 2.4rem;}
-    .myWork .work-cont a {font-size: 1.8rem;padding: 10px 36px;}
+    .myWork .work-title h2 {font-size: 3.2rem; font-weight: 900;}
+    .myWork .work-cont p {font-size: 2.0rem;}
+    .myWork h3 {
+        font-size: 2.0rem;
+    }
+    .myWork .mainColor li span {font-size: 1.4rem;}
+    .myWork .tool span {font-size: 1.4rem;}
+    .myWork .work-cont a {font-size: 1.8rem; padding: 10px 36px;}
     .myWork .work-img {width: 80%;}
     .myWork .work-img-tit h3 {font-size: 1.8rem;}
-
+    /* 포폴 슬라이드 화살표 */
+    .myWork .work-img .swiper-button-next, .myWork .work-img .swiper-button-prev {width: 60px;}
+    .myWork .work-img .swiper-button-next::after, .myWork .work-img .swiper-button-prev::after {
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 60px;
+    }
     /* CONTACT 영역 */
     .contact {margin-top: 250px;}
     .contact .contactWrap {width: 70%;}

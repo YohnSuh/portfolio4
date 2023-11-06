@@ -1,3 +1,33 @@
+header {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: .2s;
+}
+header ul {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #D8B4F8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+header ul li {
+    font-family: var(--font-high);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+header ul li:hover {color: var(--text-high);}
+/* header 스크롤 시 */
+header.scroll {top: 0;}
+/* header li click */
+header li.on {color: var(--text-high);}
 .mainPage {
     width: 100%;
     height: 100vh;
@@ -116,9 +146,9 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
+    padding-top: 100px;
 }
 .subPage .subWrap h1 {
-    margin-top: 100px;
     margin-bottom: 50px;
     font-size: 1.6rem;
     font-weight: 700;
@@ -334,7 +364,7 @@
 }
 
 /* 포트폴리오 소개 영역 */
-.myWork {margin-top: 150px;}
+.myWork {padding-top: 150px;}
 .myWork .workWrap {
     width: 90%;
     margin: 0 auto;
@@ -342,7 +372,7 @@
 .myWork h1 {
     text-align: center;
     font-size: 2.4rem;
-    font-family: Pretendard;
+    font-family: var(--font-high);
     font-weight: 900;
     margin-bottom: 45px;
 }
@@ -353,6 +383,34 @@
     margin-bottom: 10px;
 }
 .myWork .work-cont p {font-size: 1.4rem;}
+.myWork .work-cont h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-high);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* main color 소개 */
+.myWork .mainColor ul {display: flex;}
+.myWork .mainColor li {margin-right: 5px;}
+.myWork .mainColor li span {
+    color: var(--text-white);
+    padding: 5px 8px;
+    letter-spacing: 1.5px;
+}
+/* 사용 툴 소개 */
+.myWork .tool ul {display: flex;}
+.myWork .tool li {margin-right: 3px;}
+.myWork .tool span {
+    font-weight: 900;
+    padding: 3px 5px;
+    letter-spacing: 1px;
+}
+.myWork .tool span::after {
+    content: '|';
+    margin-left: 9px;
+}
+.myWork .tool li:last-child span:after {display: none;}
 .myWork .work-cont a {
     display: inline-block;
     font-size: 1.2rem;
@@ -366,9 +424,62 @@
 .myWork .work-cont a:hover {background-color: #D8B4F8;}
 .myWork .work-image img {width: 100%;}
 .myWork .work-img-tit {display: none;}
-
+/* 포폴 텍스트 영역 이동 버튼 */
+.myWork .work-txt .swiperBtn {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+}
+.myWork .work-txt .swiperBtn div {
+    width: 0;
+    color: var(--text-high);
+    font-weight: 900;
+}
+.myWork .work-txt .swiperBtn .swiper-button-prev::after {margin-right: 5px;}
+.myWork .work-txt .swiperBtn .swiper-button-prev::after,
+.myWork .work-txt .swiperBtn .swiper-button-next::after {
+    font-size: 1rem;
+    padding: 5px 7px;
+    border: 1px solid #D8B4F8;
+}
+.myWork .work-txt .swiperBtn .swiper-button-prev:hover:after,
+.myWork .work-txt .swiperBtn .swiper-button-next:hover:after {
+    background-color: #D8B4F8;
+    color: var(--text-white);
+}
+/* 포폴 슬라이드 화살표 */
+.myWork .work-img .swiper-button-next, .myWork .work-img .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+}
+.myWork .work-img .swiper-button-next::after, .myWork .work-img .swiper-button-prev::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 255, 255, .7);
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* 포폴 슬라이드 페이지 */
+.myWork .work-img .swiper-pagination {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+}
+.myWork .work-img span.swiper-pagination-bullet {background-color: rgba(0,0,0,.5);}
+.myWork .work-img span.swiper-pagination-bullet.swiper-pagination-bullet-active {background-color: #D8B4F8;}
 /* CONTACT */
-.contact {margin-top: 150px;}
+.contact {padding-top: 150px;}
 .contact .contactWrap {
     text-align: center;
     margin: 0 auto;
@@ -376,14 +487,14 @@
 .contact h1 {
     text-align: center;
     font-size: 2.4rem;
-    font-family: Pretendard;
+    font-family: var(--font-high);
     font-weight: 900;
     margin-bottom: 45px;
 }
 .contact .con-box h2 {
     font-size: 1.6rem;
     font-weight: 900;
-    font-family: Pretendard;
+    font-family: var(--font-high);
     margin-bottom: 10px;
 }
 .contact .con-box p {
