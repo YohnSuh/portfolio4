@@ -1,4 +1,6 @@
 @media all and (min-width: 1024px) {
+    /* 메뉴 글자 크기*/
+    header ul li {font-size: 2.4rem;}
     /* 메인페이지 물결 아이콘 */
     .mainPage .main-icon {
         width: 350px;
@@ -57,8 +59,6 @@
         width: 70%;
         padding-right: 50px;
         margin-right: 50px;
-        box-sizing: border-box;
-        border-right: 1px solid;
     }
     .myWork .work-title p {font-size: 1.8rem;}
     .myWork .work-title h2 {font-size: 3.2rem; font-weight: 900;}
@@ -77,7 +77,6 @@
         width: 30px;
         height: 30px;
         font-size: 1.6rem;
-        margin-bottom: 60px;
     }
     /* CONTACT 영역 */
     .contact {margin-top: 250px;}
