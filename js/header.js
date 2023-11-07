@@ -21,7 +21,7 @@ $(window).scroll(function() {
     let end = $(window).height();
 
     let wnd = $(window).scrollTop();
-    let page1 = $('.subPage').offset().top;
+    let page1 = $('.subPage').offset().top -50;
     let page2 = $('.myWork').offset().top - 50;
     let page3 = start - end - 50;
     
