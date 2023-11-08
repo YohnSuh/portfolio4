@@ -106,7 +106,7 @@
         padding-right: 30px;
         margin-right: 30px;
         box-sizing: border-box;
-        border-right: 1px solid;
+        border-right: 1px solid #D8B4F8;
     }
     .myWork .work-title p {font-size: 1.4rem;}
     .myWork .work-title h2 {
