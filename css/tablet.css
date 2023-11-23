@@ -140,8 +140,6 @@
         font-size: 1rem;
         padding: 5px 7px;
     }
-    /* 포폴 슬라이드 화살표 */
-    .myWork .work-img .swiper-button-next::after, .myWork .work-img .swiper-button-prev::after {margin-bottom: 50px;}
     /* 포폴 슬라이드 페이지 표시 */
     .myWork .work-img .swiper-pagination {margin-top: 5px;}
     /* CONTACT 영역 */

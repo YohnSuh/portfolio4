@@ -422,6 +422,7 @@ header li.on {color: var(--text-high);}
     transition: .3s;
 }
 .myWork .work-cont a:hover {background-color: #D8B4F8;}
+.myWork .work-image {width: 95%;margin: 0 auto;}
 .myWork .work-image img {width: 100%;}
 .myWork .work-img-tit {display: none;}
 /* 포폴 텍스트 영역 이동 버튼 */
@@ -451,24 +452,6 @@ header li.on {color: var(--text-high);}
 .myWork .work-txt .swiperBtn .swiper-button-next:hover:after {
     background-color: #D8B4F8;
     color: var(--text-white);
-}
-/* 포폴 슬라이드 화살표 */
-.myWork .work-img .swiper-button-next, .myWork .work-img .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-}
-.myWork .work-img .swiper-button-next::after, .myWork .work-img .swiper-button-prev::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, .3);
-    color: rgba(255, 255, 255, .7);
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
 }
 /* 포폴 슬라이드 페이지 */
 .myWork .work-img .swiper-pagination {

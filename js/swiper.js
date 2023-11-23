@@ -7,12 +7,8 @@ let work_img = new Swiper('.work-img', {
         type: 'bullets',
         clickable : true
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
     autoplay: {
-        delay: 3000,
+        delay: 6000,
         disableOnInteraction: false
     }
 });

@@ -71,13 +71,6 @@
     .myWork .work-cont a {font-size: 1.8rem; padding: 10px 36px;}
     .myWork .work-img {width: 80%;}
     .myWork .work-img-tit h3 {font-size: 1.8rem;}
-    /* 포폴 슬라이드 화살표 */
-    .myWork .work-img .swiper-button-next, .myWork .work-img .swiper-button-prev {width: 60px;}
-    .myWork .work-img .swiper-button-next::after, .myWork .work-img .swiper-button-prev::after {
-        width: 30px;
-        height: 30px;
-        font-size: 1.6rem;
-    }
     /* CONTACT 영역 */
     .contact {margin-top: 250px;}
     .contact .contactWrap {width: 70%;}
