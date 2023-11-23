@@ -422,7 +422,7 @@ header li.on {color: var(--text-high);}
     transition: .3s;
 }
 .myWork .work-cont a:hover {background-color: #D8B4F8;}
-.myWork .work-image {width: 95%;margin: 0 auto;}
+.myWork .work-image {width: 100%;margin: 0 auto;}
 .myWork .work-image img {width: 100%;}
 .myWork .work-img-tit {display: none;}
 /* 포폴 텍스트 영역 이동 버튼 */
