@@ -1,0 +1,169 @@
+@media all and (min-width: 768px) {
+    /* header */
+    header {
+        top: 50%;
+        left: -50%;
+        transform: translateY(-50%);
+        width: auto;
+    }
+    header ul {
+        display: block;
+        height: auto;
+        background-color: unset;
+        backdrop-filter: unset;
+        box-shadow: unset;
+        border-bottom: 0;
+    }
+    header ul li {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        font-weight: 900;
+        color: rgba(0, 0, 0, .2);
+    }
+    header ul li:nth-child(1) {transform: translateX(-40px);transition: .2s .15s;}
+    header ul li:nth-child(2) {transform: translateX(-40px);transition: .2s .2s;}
+    header ul li:nth-child(3) {transform: translateX(-40px);transition: .2s .25s;}
+    header ul li:nth-child(4) {transform: translateX(-40px);transition: .2s .3s;}
+    header.scroll {
+        top: 50%;
+        left: 2.5%;
+        transform: translateY(-50%);
+    }
+    header.scroll ul li:nth-child(1),
+    header.scroll ul li:nth-child(2),
+    header.scroll ul li:nth-child(3),
+    header.scroll ul li:nth-child(4) {transform: translateX(0);}
+    /* 메인페이지 물결 아이콘 */
+    .mainPage .main-icon {
+        width: 250px;
+        height: 250px;
+    }
+    .mainPage .main-icon::after {
+        height: 100%;
+        padding-bottom: 0;
+    }
+    /* 메인페이지 마우스 */
+    .mainPage .main-scroll > div {
+        width: 20px;
+        height: 30px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .mainPage .main-scroll span {
+        width: 5px;
+        height: 5px;
+    }
+    /* 서브페이지 게임 설명 글자 크기 */
+    .subPage .subWrap h1 {font-size: 2rem;}
+    /* 카드 크기 */
+    .subPage .categoryCard label,
+    .subPage .coupleCard label {
+        width: 168px;
+        height: 224px;
+    }
+    /* 카드 안 쪽 패딩 */
+    .subPage .categoryCard label div,
+    .subPage .coupleCard label div {
+        width: calc(100% - 18px);
+        height: calc(100% - 18px);
+    }
+    /* 카드 모바일 비율 없애기 */
+    .subPage .categoryCard::after,
+    .subPage .coupleCard::after {display: none;}
+    /* 카드 내용 글자 크기 */
+    .subPage .categoryCard label h2,
+    .subPage .coupleCard label h2 {font-size: 1.6rem;}
+    /* 카테고리 카드 클릭 */
+    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
+    #about:checked ~ .cardBox .categoryCard label[for="about"],
+    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
+    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-25px);}
+    /* 서브페이지 */
+    .subPage .contWrap > h2 {font-size: 3rem;}
+    .subPage .contWrap > p {font-size: 1.6rem;}
+    .subPage .contWrap > ul span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .subPage .contWrap .skill-box span {
+        font-size: 1.4rem;
+        padding: 5px 16px;
+    }
+    /* 포트폴리오 영역 */
+    .myWork {margin-top: 200px;}
+    .myWork h1 {
+        font-size: 2.8rem;
+        margin-bottom: 55px;
+    }
+    .myWork .workWrap .workSlides {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .myWork .work-txt {
+        width: 100%;
+        padding-right: 30px;
+        margin-right: 30px;
+        box-sizing: border-box;
+        border-right: 1px solid #D8B4F8;
+    }
+    .myWork .work-title p {font-size: 1.4rem;}
+    .myWork .work-title h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .myWork .work-cont p {font-size: 1.6rem;}
+    .myWork .work-cont h3 {
+        font-size: 1.6rem;
+        margin-top: 30px;
+    }
+    .myWork .mainColor li span {font-size: 1.2rem;}
+    .myWork .tool span {font-size: 1.2rem;}
+    .myWork .work-cont a {font-size: 1.4rem;}
+    .myWork .work-img {width: 100%;}
+    .myWork .work-img-tit {display: block;}
+    .myWork .work-img-tit h3 {
+        font-size: 1.6rem;
+        font-weight: 900;   
+    }
+    /* 포폴 텍스트 영역 이동 버튼 */
+    .myWork .work-txt .swiperBtn {
+        bottom: 1px;
+        right: 5px;
+        width: 40px;
+        height: 20px;
+    }
+    .myWork .work-txt .swiperBtn .swiper-button-prev::after {margin-right: 5px;}
+    .myWork .work-txt .swiperBtn .swiper-button-prev::after,
+    .myWork .work-txt .swiperBtn .swiper-button-next::after {
+        font-size: 1rem;
+        padding: 5px 7px;
+    }
+    /* 포폴 슬라이드 페이지 표시 */
+    .myWork .work-img .swiper-pagination {margin-top: 5px;}
+    /* CONTACT 영역 */
+    .contact {margin-top: 200px;}
+    .contact .contactWrap {width: 90%;}
+    .contact h1 {
+        font-size: 2.8rem;
+        margin-bottom: 55px;
+    }
+    .contact .con-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact .con-box h2 {
+        font-size: 2.0rem;
+        margin-bottom: 15px;
+    }
+    .contact .con-box p {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    footer {margin-top: 220px;}
+    footer .fWrap {
+        padding: 15px 0;
+        font-size: 1.4rem;
+    }
+}

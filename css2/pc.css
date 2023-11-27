@@ -1,0 +1,88 @@
+@media all and (min-width: 1024px) {
+    /* 메뉴 글자 크기*/
+    header ul li {font-size: 2.4rem;}
+    /* 메인페이지 물결 아이콘 */
+    .mainPage .main-icon {
+        width: 350px;
+        height: 350px;
+    }
+    /* 메인페이지 마우스 */
+    .mainPage .main-scroll > div {
+        width: 25px;
+        height: 36px;
+        border-radius: 50px;
+    }
+    /* 서브페이지 게임 설명 글자 크기 */
+    .subPage .subWrap h1 {font-size: 2.4rem;}
+    /* 카드 크기 */
+    .subPage .categoryCard label,
+    .subPage .coupleCard label {
+        width: 210px;
+        height: 280px;
+    }
+    /* 카드 내용 글자 크기 */
+    .subPage .categoryCard label h2,
+    .subPage .coupleCard label h2 {font-size: 2.4rem;}
+    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
+    #about:checked ~ .cardBox .categoryCard label[for="about"],
+    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
+    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-35px);}
+    /* 서브페이지 클릭 후 나오는 박스 */
+    .subPage .contWrap {padding: 60px 40px;}
+    .subPage .contWrap > h2 {margin-bottom: 20px;}
+    /* 서브페이지 introduce */
+    .subPage .contWrap > h2 {font-size: 3.6rem;}
+    .subPage .contWrap > p {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    .subPage .contWrap > ul {font-size: 1.6rem;}
+    .subPage .contWrap > ul span {
+        font-size: 1.4rem;
+        width: 68px;
+    }
+    .subPage .contWrap .skill-box span {
+        font-size: 1.6rem;
+        padding: 6px 20px;
+    }
+    /* 서브페이지 닫힘 버튼 */
+    .subPage .contentClose {font-size: 2.4rem;}
+
+    /* 포트폴리오 영역 */
+    .myWork {margin-top: 250px;}
+    .myWork .workWrap {width: 70%;}
+    .myWork h1 {
+        font-size: 4.8rem;
+        margin-bottom: 80px;
+    }
+    .myWork .work-txt {
+        width: 70%;
+        padding-right: 50px;
+        margin-right: 50px;
+    }
+    .myWork .work-title p {font-size: 1.8rem;}
+    .myWork .work-title h2 {font-size: 3.2rem; font-weight: 900;}
+    .myWork .work-cont p {font-size: 2.0rem;}
+    .myWork h3 {
+        font-size: 2.0rem;
+    }
+    .myWork .mainColor li span {font-size: 1.4rem;}
+    .myWork .tool span {font-size: 1.4rem;}
+    .myWork .work-cont a {font-size: 1.8rem; padding: 10px 36px;}
+    .myWork .work-img {width: 80%;}
+    .myWork .work-img-tit h3 {font-size: 1.8rem;}
+    /* CONTACT 영역 */
+    .contact {margin-top: 250px;}
+    .contact .contactWrap {width: 70%;}
+    .contact h1 {
+        font-size: 4.8rem;
+        margin-bottom: 80px;
+    }
+
+    /* footer */
+    footer {margin-top: 270px;}
+    footer .fWrap {
+        padding: 20px 0;
+        font-size: 1.6rem;
+    }
+}
