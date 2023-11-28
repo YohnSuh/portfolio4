@@ -8,7 +8,7 @@ let work_img = new Swiper('.work-img', {
         clickable : true
     },
     autoplay: {
-        delay: 6000,
+        delay: 8000,
         disableOnInteraction: false
     }
 });

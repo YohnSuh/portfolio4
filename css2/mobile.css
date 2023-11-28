@@ -256,6 +256,8 @@ header li.on {color: var(--text-high);}
     margin-top: 20px;
     margin-bottom: 10px;
 }
+/* 제작 기간 */
+.myWork .date > span {font-size: 1.4rem;}
 /* main color 소개 */
 .myWork .mainColor ul {display: flex;}
 .myWork .mainColor li {margin-right: 5px;}

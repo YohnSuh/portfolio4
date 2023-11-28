@@ -54,6 +54,7 @@
     .myWork h3 {
         font-size: 2.0rem;
     }
+    .myWork .date span {font-size: 1.8rem;}
     .myWork .mainColor li span {font-size: 1.4rem;}
     .myWork .tool span {font-size: 1.4rem;}
     .myWork .work-cont a {font-size: 1.8rem; padding: 10px 36px;}
