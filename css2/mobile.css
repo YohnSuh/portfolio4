@@ -136,37 +136,33 @@ header li.on {color: var(--text-high);}
     font-size: 1.2rem;
     color: var(--text-white);
 }
-/* Animation */ 
-@keyframes scroll {
-    100% {transform: translateY(10px);}
-}
 
 /* subPage */
 .subPage .subWrap {
-    position: relative;
-    margin: 0 auto;
+    /* position: relative; */
+    width: 90%;
     text-align: center;
-    padding-top: 100px;
+    margin: 0 auto;
 }
-.subPage .subWrap h1 {
-    margin-bottom: 50px;
-    font-size: 1.6rem;
-    font-weight: 700;
+.subPage h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--font-high);
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 45px;
 }
-.subPage .subWrap h1 span {font-weight: 900;}
-.subPage .subWrap input {display: none;}
-/* 주제 내용 */
-.subPage .subWrap {
-    display: flex;
-    justify-content: center;
+.subPage .subContent {
+    width: 100%;
+    margin-bottom: 20px;
 }
-.subPage .subContent {width: 30%;}
 .subPage .contWrap {
     background-color: white;
     padding: 40px 20px;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, .05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
 }
 .subPage .contWrap > h2 {
     font-size: 2.4rem;
@@ -198,7 +194,7 @@ header li.on {color: var(--text-high);}
     text-align: center;
     background-color: #D8B4F8;
     border-radius: 4px;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.2rem;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -231,18 +227,6 @@ header li.on {color: var(--text-high);}
     font-size: 1.6rem;
     cursor: pointer;
     color: var(--text-high);
-}
-/* 카드 짝 성공 */
-#introduce:checked ~ #c-intro:checked ~ .subContent.introBox,
-#about:checked ~ #c-about:checked ~ .subContent.aboutBox,
-#skill:checked ~ #c-skill:checked ~ .subContent.skillBox,
-#portfolio:checked ~ #c-port:checked ~ .subContent.portfolioBox {display: block;}
-/* 내용 닫기 */
-#c-close:checked ~ .subContent {display: none;}
-/* Animation hint */
-@keyframes hint {
-    0% {transform: rotate(-1.5deg);}
-    100% {transform: rotate(1.5deg);}
 }
 
 /* 포트폴리오 소개 영역 */

@@ -54,32 +54,16 @@
         width: 5px;
         height: 5px;
     }
-    /* 서브페이지 게임 설명 글자 크기 */
-    .subPage .subWrap h1 {font-size: 2rem;}
-    /* 카드 크기 */
-    .subPage .categoryCard label,
-    .subPage .coupleCard label {
-        width: 168px;
-        height: 224px;
-    }
-    /* 카드 안 쪽 패딩 */
-    .subPage .categoryCard label div,
-    .subPage .coupleCard label div {
-        width: calc(100% - 18px);
-        height: calc(100% - 18px);
-    }
-    /* 카드 모바일 비율 없애기 */
-    .subPage .categoryCard::after,
-    .subPage .coupleCard::after {display: none;}
-    /* 카드 내용 글자 크기 */
-    .subPage .categoryCard label h2,
-    .subPage .coupleCard label h2 {font-size: 1.6rem;}
-    /* 카테고리 카드 클릭 */
-    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
-    #about:checked ~ .cardBox .categoryCard label[for="about"],
-    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
-    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-25px);}
     /* 서브페이지 */
+    .subPage h1 {
+        font-size: 2.8rem;
+        margin-bottom: 55px;
+    }
+    .subPage .subWrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .subPage .subContent {width: 32.5%;}
     .subPage .contWrap > h2 {font-size: 3rem;}
     .subPage .contWrap > p {font-size: 1.6rem;}
     .subPage .contWrap > ul span {

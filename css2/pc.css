@@ -12,22 +12,12 @@
         height: 36px;
         border-radius: 50px;
     }
-    /* 서브페이지 게임 설명 글자 크기 */
-    .subPage .subWrap h1 {font-size: 2.4rem;}
-    /* 카드 크기 */
-    .subPage .categoryCard label,
-    .subPage .coupleCard label {
-        width: 210px;
-        height: 280px;
+    /* 서브페이지 */
+    .subPage h1 {
+        font-size: 4.8rem;
+        margin-bottom: 80px;
     }
-    /* 카드 내용 글자 크기 */
-    .subPage .categoryCard label h2,
-    .subPage .coupleCard label h2 {font-size: 2.4rem;}
-    #introduce:checked ~ .cardBox .categoryCard label[for="introduce"],
-    #about:checked ~ .cardBox .categoryCard label[for="about"],
-    #skill:checked ~ .cardBox .categoryCard label[for="skill"],
-    #portfolio:checked ~ .cardBox .categoryCard label[for="portfolio"] {transform: translateY(-35px);}
-    /* 서브페이지 클릭 후 나오는 박스 */
+    .subPage .subWrap {width: 70%;}
     .subPage .contWrap {padding: 60px 40px;}
     .subPage .contWrap > h2 {margin-bottom: 20px;}
     /* 서브페이지 introduce */
@@ -45,8 +35,6 @@
         font-size: 1.6rem;
         padding: 6px 20px;
     }
-    /* 서브페이지 닫힘 버튼 */
-    .subPage .contentClose {font-size: 2.4rem;}
 
     /* 포트폴리오 영역 */
     .myWork {margin-top: 250px;}
