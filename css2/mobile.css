@@ -22,6 +22,8 @@ header ul li {
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+    flex :1;
+    text-align: center;
 }
 header ul li:hover {color: var(--text-high);}
 /* header 스크롤 시 */

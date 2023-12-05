@@ -20,6 +20,7 @@
         margin-bottom: 10px;
         font-weight: 900;
         color: rgba(0, 0, 0, .2);
+        text-align: left;
     }
     header ul li:nth-child(1) {transform: translateX(-40px);transition: .2s .15s;}
     header ul li:nth-child(2) {transform: translateX(-40px);transition: .2s .2s;}
@@ -136,8 +137,8 @@
     }
     .contact .con-box {
         display: flex;
-        justify-content: space-between;
     }
+    .contact .cont-item {flex:1;}
     .contact .con-box h2 {
         font-size: 2.0rem;
         margin-bottom: 15px;
