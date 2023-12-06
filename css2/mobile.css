@@ -106,6 +106,7 @@ header li.on {color: var(--text-high);}
     font-size: 12px;
     font-weight: 500;
 }
+.mainPage .today-visit {font-size: 10px;letter-spacing:2px;}
 /* Animation */
 @keyframes wave {
     100% { transform: rotate(360deg); }
