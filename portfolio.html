@@ -17,8 +17,12 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="js/header.js" defer></script>
     <script src="js/swiper.js" defer></script>
+    <script src="js/gsap.js" defer></script>
 </head>
 <body>
     <header>
@@ -55,7 +59,7 @@
     </section><!--mainWrap-->
     <!--subPage-->
     <section class="subPage">
-        <h1>INFORMATION</h1>
+        <h1 class="h-title">INFORMATION</h1>
         <div class="subWrap">
             <!--intro내용-->
             <div class="subContent introBox">
@@ -102,7 +106,7 @@
     </section><!--subPage-->
     <section class="myWork">
         <div class="workWrap">
-            <h1>PORTFOLIO</h1>
+            <h1 class="h-title">PORTFOLIO</h1>
             <div class="workSlides">
                 <div class="swiper work-txt">
                     <div class="swiper-wrapper work-txt-wrap">
@@ -427,17 +431,17 @@
 
     <section class="contact">
         <div class="contactWrap">
-            <h1>CONTACT ME</h1>
+            <h1 class="h-title">CONTACT ME</h1>
             <div class="con-box">
-                <div class="cont-item">
+                <div class="cont-item phone">
                     <h2><i class="fa-solid fa-phone"></i> Cell Phone</h2>
                     <p>010-9949-6359</p>
                 </div><!--con-item-->
-                <div class="cont-item">
+                <div class="cont-item email">
                     <h2><i class="fa-solid fa-at"></i> E-mail</h2>
                     <p>yohnsuh@gmail.com</p>
                 </div><!--con-item-->
-                <div class="cont-item">
+                <div class="cont-item git">
                     <h2><i class="fa-brands fa-github"></i> Github</h2>
                     <a href="https://github.com/YohnSuh" target="_blank"><p>https://github.com/YohnSuh</p></a>
                 </div><!--con-item-->

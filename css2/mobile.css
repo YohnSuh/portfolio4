@@ -139,7 +139,9 @@ header li.on {color: var(--text-high);}
     font-size: 1.2rem;
     color: var(--text-white);
 }
-
+@keyframes scroll {
+    from {transform: translateY(20px);}
+}
 /* subPage */
 .subPage .subWrap {
     /* position: relative; */
@@ -367,3 +369,62 @@ footer .fWrap {
     font-size: 1.2rem;
 }
 footer .fWrap p:last-child {font-weight: 900;}
+
+/* gsap */
+.h-title {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(70px);
+}
+.h-title-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.introBox {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform .8s, opacity 1s;
+}
+.aboutBox {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform .8s, opacity 1.2s;
+}
+.skillBox {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: transform .8s, opacity 1.4s;
+}
+.subContent-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.workSlides {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+}
+.workSlides-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.phone {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: 1s .2s;
+}
+.email {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s .35s;
+}
+.git {
+    opacity: 0;
+    transform: translateY(130px);
+    transition: 1s .45s;
+}
+.cont-item-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
