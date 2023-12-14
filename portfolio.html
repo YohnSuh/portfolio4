@@ -455,40 +455,5 @@
             <p>Copyright © 2023 All Rights Reserved</p>
         </div>
     </footer>
-
-    <script>
-        // 현재 날짜 가져오기
-        function todayDate() {
-            const now = new Date();
-            const year = now.getFullYear();
-            const month = (now.getMonth() + 1).toString().padStart(2, '0');
-            const day = now.getDate().toString().padStart(2, '0');
-            
-            return `${year}-${month}-${day}`;
-        }
-        const today = todayDate();
-        let todayCnt = localStorage.getItem(today);
-        
-        // 오늘 방문자 수가 없으면 초기화
-        if(!todayCnt) {todayCnt = 0;}
-        
-        // 방문자 수 증가
-        todayCnt = Number(todayCnt) + 1;
-
-        // 로컬스트리지에 저장하기
-        localStorage.setItem(today, todayCnt);
-
-        // 총 방문자 수 계산
-        const totalCnt = localStorage.getItem('totalCnt');
-        if(totalCnt) {
-            localStorage.setItem('totalCnt', Number(totalCnt) + 1);
-        } else {
-            localStorage.setItem('totalCnt', 1);
-        }
-
-        const nowText = document.querySelector('.today-visit');
-        nowText.innerText = `Today ${todayCnt}`;
-
-    </script>
 </body>
 </html>
