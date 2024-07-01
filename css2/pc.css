@@ -44,7 +44,6 @@
         margin-bottom: 80px;
     }
     .myWork .work-txt {
-        width: 30%;
         padding-right: 50px;
         margin-right: 50px;
     }
@@ -58,7 +57,7 @@
     .myWork .mainColor li span {font-size: 1.4rem;}
     .myWork .tool span {font-size: 1.4rem;}
     .myWork .work-cont a {font-size: 1.8rem; padding: 10px 36px;}
-    .myWork .work-img {width: 80%;}
+    .myWork .work-img {width: 50%;}
     .myWork .work-img-tit h3 {font-size: 1.8rem;}
     /* CONTACT 영역 */
     .contact {margin-top: 250px;}
