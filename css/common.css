@@ -6,24 +6,20 @@
 }
 /* 프리텐다드 */
 @font-face {
-    font-family: Pretendard;
+    font-family: Pretendard1;
     src: url('../fonts/Pretendard-Light.ttf');
-    font-weight: 300;
 }
 @font-face {
-    font-family: Pretendard;
+    font-family: Pretendard2;
     src: url('../fonts/Pretendard-Medium.ttf');
-    font-weight: 500;
 }
 @font-face {
-    font-family: Pretendard;
+    font-family: Pretendard3;
     src: url('../fonts/Pretendard-Bold.ttf');
-    font-weight: 700;
 }
 @font-face {
-    font-family: Pretendard;
+    font-family: Pretendard4;
     src: url('../fonts/Pretendard-Black.ttf');
-    font-weight: 900;
 }
 /* kopub */
 @font-face {
